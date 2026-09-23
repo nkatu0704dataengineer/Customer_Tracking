@@ -1,0 +1,9 @@
+com\tracking\generator\CustomerEventGenerator.class
+com\tracking\model\CustomerEvent$CustomerEventBuilder.class
+com\tracking\producer\CustomerEventProducer$1.class
+com\tracking\producer\CustomerEventProducer.class
+com\tracking\generator\CustomerEventGenerator$SessionInfo.class
+com\tracking\CustomerTrackingApp.class
+com\tracking\model\CustomerEvent$EventTypes.class
+com\tracking\generator\CustomerEventGenerator$AccountState.class
+com\tracking\model\CustomerEvent.class

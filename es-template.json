@@ -1,0 +1,18 @@
+{
+  "index_patterns": ["customer-events*"],
+  "template": {
+    "mappings": {
+      "properties": {
+        "acc_id": { "type": "keyword" },
+        "session_id": { "type": "keyword" },
+        "event_type": { "type": "keyword" },
+        "product_id": { "type": "keyword" },
+        "device_type": { "type": "keyword" },
+        "time_on_page_minutes": { "type": "float" },
+        "event_time": { "type": "date" },
+        "created_at": { "type": "date" },
+        "updated_at": { "type": "date" }
+      }
+    }
+  }
+}

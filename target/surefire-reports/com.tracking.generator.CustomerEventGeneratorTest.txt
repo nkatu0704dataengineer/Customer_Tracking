@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.tracking.generator.CustomerEventGeneratorTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.674 s -- in com.tracking.generator.CustomerEventGeneratorTest

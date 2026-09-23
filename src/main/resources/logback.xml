@@ -1,0 +1,24 @@
+<configuration scan="true" scanPeriod="30 seconds">
+
+    <!-- Console Appender with clear, colored formatting -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %highlight(%-5level) %cyan(%logger{36}) - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!-- Project-specific logging level -->
+    <logger name="com.tracking" level="INFO" additivity="false">
+        <appender-ref ref="STDOUT" />
+    </logger>
+
+    <!-- Kafka Client log level (suppress verbose heartbeat/fetcher debug logs) -->
+    <logger name="org.apache.kafka" level="WARN" />
+
+    <!-- Root Logger -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+</configuration>
