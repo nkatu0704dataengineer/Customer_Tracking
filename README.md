@@ -42,8 +42,8 @@ flowchart LR
         ES[("Elasticsearch 8.15.3\nIndices: customer-events-raw-YYYY.MM.dd\nTyped Mappings Template")]
         KIB["Kibana 8.15.3\nLive Real-Time Dashboard\n(10s Auto-refresh)"]
         
-        C3 -->|Bulk Indexing (Idempotent)| ES
-        ES -->|Query & Aggregate| KIB
+        C3 -->|"Bulk Indexing (Idempotent)"| ES
+        ES -->|"Query & Aggregate"| KIB
     end
 
     style GEN fill:#f9f9f9,stroke:#333,stroke-width:1px
